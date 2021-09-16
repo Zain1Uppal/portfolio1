@@ -29,11 +29,15 @@ body{
 }
 nav{
     display: block;
-    margin: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
     font-size: 20px;
     background-color: lightgray;
     border: lightgray solid;
-    padding: 3rem;
+    padding: 1.5rem;
+}
+nav > a {
+    padding: 10vw;
 }
 article {
     background-color: lightgray;
@@ -54,3 +58,16 @@ article > section {
     border-radius: 25px;
     font-size: 1.5vh;
 } 
+
+header{grid-area: head;}
+nav{grid-area: nav;}
+main{grid-area: main;}
+aside{grid-area:aside;}
+
+body{
+    display: grid;
+    grid-template-areas: "head head"
+                        "nav nav"
+                        "aside aside"
+                        "main main";
+}
