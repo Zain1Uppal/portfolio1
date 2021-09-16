@@ -27,3 +27,11 @@ body{
     margin: auto;
     
 }
+nav{
+    display: block;
+    margin: 1.2rem;
+    font-size: 20px;
+    background-color: lightgray;
+    border: lightgray solid;
+    padding: 3rem;
+}
